@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Territorio 360: información y registro del proceso."
+    >
+    <title>TERRITORIO 360</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Ir al contenido principal</a>
+
+    <div class="utility-bar">
+      <div class="container utility-content">
+        <span>Un espacio para construir territorio</span>
+        <a href="#proceso">Conoce el proceso <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="brand" href="#inicio" aria-label="Territorio 360, inicio">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M24 3 44 14.5v19L24 45 4 33.5v-19L24 3Z" />
+              <path d="m4 14.5 20 11.8 20-11.8M24 26.3V45" />
+              <circle cx="24" cy="14" r="4" />
+            </svg>
+          </span>
+          <span class="brand-name">TERRITORIO <strong>360</strong></span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navegación principal">
+          <a class="nav-link active" href="#inicio">Inicio</a>
+          <a class="nav-link" href="#proceso">El proceso</a>
+          <button class="nav-cta" type="button" data-open-registration>
+            Registro Proceso <span aria-hidden="true">→</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-shape hero-shape-one" aria-hidden="true"></div>
+        <div class="hero-shape hero-shape-two" aria-hidden="true"></div>
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> PARTICIPACIÓN · PLANEACIÓN · FUTURO</p>
+            <h1 id="hero-title">TERRITORIO<br><em>360</em></h1>
+            <p class="hero-description">
+              Un punto de encuentro para conocer, participar y ser parte de
+              las iniciativas que transforman nuestro territorio.
+            </p>
+            <button class="button button-primary" type="button" data-open-registration>
+              Registro Proceso
+              <span class="button-arrow" aria-hidden="true">→</span>
+            </button>
+            <div class="hero-note">
+              <span class="note-line" aria-hidden="true"></span>
+              <span>Tu participación impulsa nuevas perspectivas.</span>
+            </div>
+          </div>
+
+          <div class="hero-art" aria-label="Ilustración abstracta de un territorio conectado">
+            <div class="orbit orbit-outer"></div>
+            <div class="orbit orbit-inner"></div>
+            <div class="art-core">
+              <span class="core-label">T</span>
+              <span class="core-number">360</span>
+              <span class="core-caption">UNA VISIÓN<br>EN COMÚN</span>
+            </div>
+            <span class="orbit-dot dot-top"></span>
+            <span class="orbit-dot dot-right"></span>
+            <span class="orbit-dot dot-bottom"></span>
+            <span class="orbit-dot dot-left"></span>
+            <span class="art-tag tag-top">IDEAS</span>
+            <span class="art-tag tag-bottom">PERSONAS</span>
+            <span class="art-cross cross-one" aria-hidden="true">+</span>
+            <span class="art-cross cross-two" aria-hidden="true">+</span>
+          </div>
+        </div>
+        <div class="hero-footer">
+          <div class="container hero-footer-content">
+            <span>UNA MIRADA INTEGRAL</span>
+            <span class="footer-divider" aria-hidden="true"></span>
+            <span>UN TERRITORIO CONECTADO</span>
+            <span class="scroll-cue">DESLIZA <span aria-hidden="true">↓</span></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="process-section" id="proceso" aria-labelledby="process-title">
+        <div class="container process-layout">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow-dark"><span></span> PARTICIPA</p>
+            <h2 id="process-title">Cada perspectiva<br>cuenta.</h2>
+          </div>
+          <div class="process-content">
+            <p>
+              Comparte información sobre tu proyecto público y sus necesidades
+              de planeación administrativa para aportar al proceso.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <dialog class="registration-dialog" id="registro" aria-labelledby="registration-title">
+        <form class="registration-form" id="registration-form">
+          <button
+            class="dialog-close"
+            type="button"
+            data-close-registration
+            aria-label="Cerrar ventana de registro"
+          >×</button>
+            <div class="form-heading">
+              <div>
+                <p class="eyebrow eyebrow-dark"><span></span> FORMULARIO DE PARTICIPACIÓN</p>
+                <h2 id="registration-title">Registro Proceso</h2>
+                <p class="form-intro">Completa los 15 campos para caracterizar tu proyecto.</p>
+              </div>
+              <span class="required-note">* Campos obligatorios</span>
+            </div>
+
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="nombre">Nombre completo <span>*</span></label>
+                <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+              </div>
+              <div class="form-field">
+                <label for="tipo-documento">Tipo de documento <span>*</span></label>
+                <select id="tipo-documento" name="tipo-documento" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="cc">Cédula de ciudadanía</option>
+                  <option value="ce">Cédula de extranjería</option>
+                  <option value="pasaporte">Pasaporte</option>
+                  <option value="nit">NIT</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="documento">Número de documento <span>*</span></label>
+                <input id="documento" name="documento" type="text" autocomplete="off" required>
+              </div>
+              <div class="form-field">
+                <label for="correo">Correo electrónico <span>*</span></label>
+                <input id="correo" name="correo" type="email" autocomplete="email" required>
+              </div>
+              <div class="form-field">
+                <label for="telefono">Teléfono de contacto <span>*</span></label>
+                <input id="telefono" name="telefono" type="tel" autocomplete="tel" required>
+              </div>
+              <div class="form-field">
+                <label for="entidad">Entidad u organización <span>*</span></label>
+                <input id="entidad" name="entidad" type="text" autocomplete="organization" required>
+              </div>
+              <div class="form-field">
+                <label for="cargo">Cargo o rol en el proceso <span>*</span></label>
+                <input id="cargo" name="cargo" type="text" required>
+              </div>
+              <div class="form-field">
+                <label for="departamento">Departamento <span>*</span></label>
+                <input id="departamento" name="departamento" type="text" required>
+              </div>
+              <div class="form-field">
+                <label for="municipio">Municipio o localidad <span>*</span></label>
+                <input id="municipio" name="municipio" type="text" required>
+              </div>
+              <div class="form-field">
+                <label for="proyecto">Nombre del proyecto público <span>*</span></label>
+                <input id="proyecto" name="proyecto" type="text" required>
+              </div>
+              <div class="form-field">
+                <label for="sector">Sector del proyecto <span>*</span></label>
+                <select id="sector" name="sector" required>
+                  <option value="">Selecciona un sector</option>
+                  <option>Educación</option>
+                  <option>Salud</option>
+                  <option>Infraestructura y transporte</option>
+                  <option>Ambiente y desarrollo sostenible</option>
+                  <option>Desarrollo social</option>
+                  <option>Gobierno y fortalecimiento institucional</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="etapa">Etapa actual del proyecto <span>*</span></label>
+                <select id="etapa" name="etapa" required>
+                  <option value="">Selecciona una etapa</option>
+                  <option>Identificación de la necesidad</option>
+                  <option>Formulación y planeación</option>
+                  <option>Evaluación y viabilidad</option>
+                  <option>Contratación</option>
+                  <option>Ejecución</option>
+                  <option>Seguimiento y evaluación</option>
+                  <option>Cierre</option>
+                </select>
+              </div>
+              <div class="form-field form-field-wide">
+                <label for="necesidad">Necesidad o problema que aborda <span>*</span></label>
+                <textarea id="necesidad" name="necesidad" rows="3" required></textarea>
+              </div>
+              <div class="form-field form-field-wide">
+                <label for="objetivo">Objetivo principal del proyecto <span>*</span></label>
+                <textarea id="objetivo" name="objetivo" rows="3" required></textarea>
+              </div>
+              <div class="form-field">
+                <label for="presupuesto">Presupuesto estimado (COP) <span>*</span></label>
+                <select id="presupuesto" name="presupuesto" required>
+                  <option value="">Selecciona un rango</option>
+                  <option>Menos de $100 millones</option>
+                  <option>De $100 a $500 millones</option>
+                  <option>De $500 a $1.000 millones</option>
+                  <option>Más de $1.000 millones</option>
+                  <option>Por definir</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <p class="form-disclaimer">
+                La opción Guardar valida el formulario, pero no almacena ni envía datos.
+              </p>
+              <div class="form-buttons">
+                <button class="button button-primary form-submit" type="submit">
+                  Guardar <span class="button-arrow" aria-hidden="true">→</span>
+                </button>
+                <button class="button button-secondary" type="reset">Limpiar</button>
+                <button class="button button-secondary" type="button" data-close-registration>
+                  Cerrar
+                </button>
+              </div>
+            </div>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </dialog>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <a class="footer-brand" href="#inicio">TERRITORIO <strong>360</strong></a>
+        <span>Una visión compartida de nuestro territorio.</span>
+        <a class="back-top" href="#inicio">Volver arriba ↑</a>
+      </div>
+    </footer>
+    <script>
+      const registrationDialog = document.querySelector("#registro");
+      const registrationForm = document.querySelector("#registration-form");
+      const formStatus = document.querySelector("#form-status");
+
+      document.querySelectorAll("[data-open-registration]").forEach((button) => {
+        button.addEventListener("click", () => {
+          formStatus.textContent = "";
+          registrationDialog.showModal();
+        });
+      });
+
+      document.querySelectorAll("[data-close-registration]").forEach((button) => {
+        button.addEventListener("click", () => registrationDialog.close());
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && registrationDialog.open) {
+          registrationDialog.close();
+        }
+      });
+
+      registrationForm.addEventListener("reset", () => {
+        formStatus.textContent = "";
+      });
+
+      registrationForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        formStatus.textContent =
+          "Formulario validado. La información aún no se ha guardado ni enviado.";
+      });
+    </script>
+  </body>
+</html>
