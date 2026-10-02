@@ -2,13 +2,13 @@
 
 :root {
   color-scheme: light;
-  --ink: #172c3d;
-  --muted: #637684;
-  --paper: #f7f8f5;
+  --ink: #123653;
+  --muted: #61798a;
+  --paper: #f5f8fa;
   --white: #fff;
-  --green: #a8cf43;
-  --deep-green: #678a2c;
-  --line: #dce3de;
+  --green: #39bca5;
+  --deep-green: #087f78;
+  --line: #d9e4e9;
   --container: 1160px;
 }
 
@@ -961,5 +961,168 @@ h1 em {
   *::before,
   *::after {
     transition-duration: 0.01ms !important;
+  }
+}
+
+.utility-bar,
+.site-footer {
+  background: #0b3a63;
+}
+
+.utility-bar {
+  color: #e1edf3;
+}
+
+.utility-content a,
+.back-top {
+  color: #76d8c5;
+}
+
+.nav-link {
+  color: #5e7788;
+}
+
+.nav-cta {
+  border-color: #b7ded9;
+  color: #087f78;
+}
+
+.nav-cta:hover {
+  background: #edf8f7;
+}
+
+.hero {
+  background: #eef7f7;
+}
+
+.eyebrow {
+  color: #087f78;
+}
+
+.hero-description,
+.process-content > p {
+  color: #5e7788;
+}
+
+.button-primary {
+  background: #087f78;
+}
+
+.button-primary:hover {
+  background: #066b69;
+}
+
+.hero-note {
+  color: #64808d;
+}
+
+.note-line {
+  background: #a4d8d0;
+}
+
+.orbit {
+  border-color: rgba(8, 127, 120, 0.2);
+}
+
+.orbit-inner {
+  border-color: rgba(8, 127, 120, 0.3);
+}
+
+.art-core {
+  background: #d9f0eb;
+  box-shadow: 0 0 0 17px rgba(57, 188, 165, 0.15), 0 20px 50px rgba(11, 58, 99, 0.12);
+  color: #087f78;
+}
+
+.orbit-dot {
+  border-color: #eef7f7;
+  background: #21aa97;
+  box-shadow: 0 0 0 1px #21aa97;
+}
+
+.dot-right {
+  background: #d29c50;
+  box-shadow: 0 0 0 1px #d29c50;
+}
+
+.dot-bottom {
+  background: #0b5b83;
+  box-shadow: 0 0 0 1px #0b5b83;
+}
+
+.art-tag {
+  border-color: #cce3e1;
+  background: #f4faf9;
+  color: #087f78;
+}
+
+.art-cross {
+  color: #20a992;
+}
+
+.hero-shape {
+  border-color: rgba(8, 127, 120, 0.08);
+}
+
+.hero-footer {
+  border-color: #d5e5e8;
+}
+
+.hero-footer-content {
+  color: #64808d;
+}
+
+.footer-divider {
+  background: #bfd5dc;
+}
+
+.registration-dialog {
+  border-color: #d9e4e9;
+  background: #f7fbfc;
+}
+
+.dialog-close:hover {
+  background: #e8f5f2;
+}
+
+.form-field > label {
+  color: #28485e;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: #087f78;
+  outline-color: #c6e9e2;
+}
+
+.form-status {
+  color: #087f78;
+}
+
+.button-secondary {
+  border-color: #c9dce3;
+  color: #28485e;
+}
+
+.button-secondary:hover {
+  background: #eef6f8;
+}
+
+.site-footer {
+  color: #e1edf3;
+}
+
+.footer-brand strong {
+  color: #76d8c5;
+}
+
+:focus-visible {
+  outline-color: #20a992;
+}
+
+@media (max-width: 480px) {
+  .form-actions {
+    background: #f7fbfc;
   }
 }
