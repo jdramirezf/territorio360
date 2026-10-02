@@ -90,30 +90,15 @@ a {
 
 .brand {
   display: inline-flex;
+  flex: 0 1 auto;
   align-items: center;
-  gap: 12px;
+  min-width: 0;
 }
 
-.brand-mark {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  border-radius: 13px;
-  background: #eff5e3;
-}
-
-.brand-mark svg {
-  width: 31px;
-  stroke: var(--deep-green);
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.7;
-}
-
-.brand-mark circle {
-  fill: var(--green);
-  stroke: none;
+.brand-logo {
+  display: block;
+  width: min(226px, 100%);
+  height: auto;
 }
 
 .brand-name,
@@ -750,17 +735,8 @@ h1 em {
     min-height: 72px;
   }
 
-  .brand-mark {
-    width: 37px;
-    height: 37px;
-  }
-
-  .brand-mark svg {
-    width: 28px;
-  }
-
-  .brand-name {
-    font-size: 12px;
+  .brand-logo {
+    width: min(210px, 100%);
   }
 
   .main-nav {
@@ -849,12 +825,8 @@ h1 em {
     font-size: 14px;
   }
 
-  .brand {
-    gap: 8px;
-  }
-
-  .brand-name {
-    font-size: 10px;
+  .brand-logo {
+    width: min(168px, 100%);
   }
 
   .nav-cta {
